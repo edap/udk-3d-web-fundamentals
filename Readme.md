@@ -9,14 +9,17 @@ The course is aimed at beginners, some familiarity with variables, loops and arr
 ![example](cover.jpg)
 
 
-3D Fundamentals 
-- The theater examples
+### Links
+
+[three js docs](https://threejs.org/manual/#en/fundamentals)
+
+### 01
+
+- Examples
+- The theater example
 - Offline rendering VS realtime rendering. The Monitor and the HZ
 - How is the course structured
 - How is the code structured
 
-
-
-https://threejs.org/manual/#en/fundamentals
 
 
