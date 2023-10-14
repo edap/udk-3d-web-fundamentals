@@ -25,20 +25,20 @@ Image from the three.js website
 
 ## Documentation
 
-[threejs docs](https://threejs.org/manual/#en/fundamentals)
-[making a game in threejs](https://threejs.org/manual/#en/game)
+- [threejs docs](https://threejs.org/manual/#en/fundamentals)
+- [making a game in threejs](https://threejs.org/manual/#en/game)
 
 ### Essay
 
-[Games that don't fake space](https://www.youtube.com/watch?v=Q85l1Fenc5w)
-[Fear of Cold](https://www.youtube.com/watch?v=Pp2wbyLoEtM)
-[The Strange Reality of Roller Coaster Tycoon](https://www.youtube.com/watch?v=K4VLPThmBoI&t=2s)
+- [Games that don't fake space](https://www.youtube.com/watch?v=Q85l1Fenc5w)
+- [Fear of Cold](https://www.youtube.com/watch?v=Pp2wbyLoEtM)
+- [The Strange Reality of Roller Coaster Tycoon](https://www.youtube.com/watch?v=K4VLPThmBoI&t=2s)
 
 ### Games
 
-[Kentucky Route Zero](http://kentuckyroutezero.com/)
-[Queers in Love ar rhe End of the World ](https://w.itch.io/end-of-the-world)
-[Disco Elysium](https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/)
+- [Kentucky Route Zero](http://kentuckyroutezero.com/)
+- [Queers in Love ar rhe End of the World ](https://w.itch.io/end-of-the-world)
+- [Disco Elysium](https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/)
 
 ### Other references
 
