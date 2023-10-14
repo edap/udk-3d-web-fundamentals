@@ -47,7 +47,7 @@ Image from the three.js website
 
 *“I imagined a labyrinth of labyrinths, a maze of mazes, a twisting, turning, ever-widening labyrinth that contained both past and future and somehow implied the stars. Absorbed in those illusory imaginings, I forgot that I was a pursued man; I felt myself, for an indefinite while, the abstract perceiver of the world. The vague, living countryside, the moon, the remains of the day did their work in me; so did the gently downward road, which forestalled all possibility of weariness. The evening was near, yet infinite.”*
 
-- Jorge Luis Borges, Ficciones
+*Jorge Luis Borges, Ficciones*
 
 - [Mondrian, Composition No. 10 Pier and Ocean, 1915](https://www.piet-mondrian.org/pier-and-ocean.jsp)
 - [Picasso, minotauromacy](https://www.pablopicasso.org/minotauromachy.jsp)
