@@ -1,25 +1,31 @@
 ## Fundamentals of 3D animation for the web
 
 
-In this course we will learn how to produce interactive 3D content for the web. 
-The goal of the course is to give students the tools to create a video-game, an open space or a 3D animation that runs in the browser, can be self-hosted without the of a social media platform, and can be shared with a link. We will only use open source tools such as Three.js and Blender. 
+The goal of the course is to give students the tools to create a video-game, an open space or a 3D animation that runs in the browser, can be self-hosted without the need of a social media platform, and can be shared with a link. Each student will develop its own game/animation, with the only constrain to create a link to the game/animation of another classmate.
+
+We will only use open source tools such as Three.js and Blender. 
 
 The course is aimed at beginners, some familiarity with variables, loops and arrays is recommended but not mandatory.
 
 
 ![example](cover.jpg)
-Image from the three.js website
+*Image from the three.js website*
 
 
 
 
 ### 01
 
-- Examples
+- Examples of 3D in the browser
 - The theater example
 - Offline rendering VS realtime rendering. The Monitor and the HZ
 - How is the course structured
 - How is the code structured
+
+
+### 02
+
+- 
 
 
 
@@ -30,19 +36,33 @@ Image from the three.js website
 
 ### Essay
 
+An unordered list. Do you mind share in class another essay on videogame that you think is interesting for the class?
+
 - [Games that don't fake space](https://www.youtube.com/watch?v=Q85l1Fenc5w)
 - [Fear of Cold](https://www.youtube.com/watch?v=Pp2wbyLoEtM)
 - [The Strange Reality of Roller Coaster Tycoon](https://www.youtube.com/watch?v=K4VLPThmBoI&t=2s)
+- [Games without Players](https://www.molleindustria.org/blog/games-without-players/)
+- [250 a game designer should know](http://250things.molleindustria.org/)
+- [videogames and the spirit of Capitalism](https://www.molleindustria.org/blog/videogames-and-the-spirit-of-capitalism/)
+
+### Online Games
+
+Some example of browser based videogames
+
+- [A Dark Room](https://adarkroom.doublespeakgames.com/). Interesting for how transform (initially) simple choices into a complex narrative. Also notable the importance of sound when there are no images. From the same author: [Penrose](https://penrose.doublespeakgames.com/). Another notable example of narrative games in the browser.
+- [Line Rider](https://www.linerider.com/). Interesting mix between draw and character movement. 
+- [Every day the same dream](https://www.molleindustria.org/everydaythesamedream/everydaythesamedream.html)
 
 ### Games
 
 - [Kentucky Route Zero](http://kentuckyroutezero.com/)
 - [Queers in Love ar rhe End of the World ](https://w.itch.io/end-of-the-world)
 - [Disco Elysium](https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/)
+- [Getting Over It with Bennett Foddy](https://store.steampowered.com/app/240720/Getting_Over_It_with_Bennett_Foddy/)
 
 ### Other references
 
-*Maze*
+#### Maze
 
 
 *“I imagined a labyrinth of labyrinths, a maze of mazes, a twisting, turning, ever-widening labyrinth that contained both past and future and somehow implied the stars. Absorbed in those illusory imaginings, I forgot that I was a pursued man; I felt myself, for an indefinite while, the abstract perceiver of the world. The vague, living countryside, the moon, the remains of the day did their work in me; so did the gently downward road, which forestalled all possibility of weariness. The evening was near, yet infinite.”*
@@ -57,26 +77,20 @@ Image from the three.js website
 - [Simple Path finding algorithm](https://en.wikipedia.org/wiki/Pathfinding#Sample_algorithm)
 - [List of maze video games](https://en.wikipedia.org/wiki/List_of_maze_video_games)
 - [Pac-man](https://en.wikipedia.org/wiki/Pac-Man)
-- [The invisible shape of things past](https://artcom.de/en/project/the-invisible-shape-of-things-past/)
 
 
-*How to walk on objects*
+#### How to walk on objects
 
-
-- [metashape](https://www.agisoft.com/) 
+- [metashape](https://www.agisoft.com/)
 - [Golan Levin's course](https://github.com/golanlevin/ExperimentalCapture/)
 - [Metashape's  documentation](https://www.agisoft.com/pdf/metashape_1_5_en.pdf). Specially the 
-- [Michelle's tutorial](https://github.com/golanlevin/ExperimentalCapture/blob/master/students/michelle/tutorial2.md) for using PhotoScan
-- [Claire's tutorial](https://github.com/golanlevin/ExperimentalCapture/blob/master/workshop/pdf/photogrammetry_from_video_with_photoscan.pdf) for PhotoScan from video frames.
 - [scanning of the bottom part of an object](https://www.agisoft.com/index.php?id=49)
 - [metashape tutorial](https://styly.cc/tips/photogrammetry_discont_metashape/)
 - [A brief history of photogrammetry, By Golan Levin](https://github.com/golanlevin/ExperimentalCapture/blob/master/docs/Photogrammetry-and-3D-scanning.md)
-- [Slit Scan Turntable by Convivial](https://www.instructables.com/id/Slit-Scan-Turntable/)
-- [Clouds, James George & Jonathan Minard](https://medium.com/volumetric-filmmaking/spatialstorytelling-fa4b6ace3e16)
+- [Polycam](https://poly.cam/)
 
 
-
-*Camera movement and navigation*
+#### Camera movement and navigation
 
 - [collection of examples in game](https://docs.google.com/document/d/1iNSQIyNpVGHeak6isbP6AHdHD50gs8MNXF1GCf08efg/pub?urp=gmail_link)
 - [Moving Cameras and Point of View by Golan Levin](https://github.com/golanlevin/ExperimentalCapture/blob/master/docs/moving-cameras.md)
