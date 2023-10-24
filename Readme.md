@@ -25,7 +25,9 @@ The course is aimed at beginners, some familiarity with variables, loops and arr
 
 ### 02
 
-- 
+- Add light. Add more lights.
+- Move things with sin(time) and cos(time). Unit Circle, wave, amplitude and frequence.
+- Exercise in class. Take inspiration from one the abstract art of the beginning of the '900 and try to make a 3D composition.
 
 
 
