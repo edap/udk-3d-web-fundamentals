@@ -57,7 +57,7 @@ const tick = () =>
 ```
 
 - Intro to the scene Graph.
-- Exercise. Use `Group` to group objects and move them.
+- Exercise. Use `Group` to move/scale/rotate groups objects.
 
 ```
 const group = new THREE.Group()
