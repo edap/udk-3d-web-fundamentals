@@ -58,6 +58,8 @@ const tick = () =>
 
 - Intro to the scene Graph.
 - Exercise. Use `Group` to move/scale/rotate groups objects.
+- Exercise. Use `Group` to create something that resembles the solar system, with planets rotating around the scene.
+
 
 ```
 const group = new THREE.Group()
@@ -77,12 +79,17 @@ scene.add(group)
 
 #### Working with the terminal.
 
+Windows, Mac and Linux have a terminal. On Mac and Linux, look for "terminal" in your applications. On Windows look for PowerShell, avoid the Command Prompt.
+
 The navigation commands that you need to move around in your directories using the terminal are:
 
 - `pwd`. It means "print working directory" and it simply print on screen the path on which you are at the moment.
 - `ls`. It means "list", it lists all the files and directory in the folder where you currently are.
 - `cd`, followed by the name of the folder you want to open. It means "change directory", and it is the equivalent of double clicking on a folder.
 - `cd ..`. It means move back of one level
+
+
+
 
 #### NPM
  - `npm install`. Install all the dependencies listed in `package.json`
