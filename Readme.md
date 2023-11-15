@@ -68,7 +68,13 @@ group.rotation.x = 0.8
 scene.add(group)
 ```
 
-###
+### 04
+
+Fullscreen (app 02-b) and OrbitControls (03). Intro to GIT
+
+### 05
+
+Install a GUI
 
 
 ## Documentation

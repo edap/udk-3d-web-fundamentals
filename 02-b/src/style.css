@@ -1,4 +1,5 @@
 /* this removes all types of margin and padding */
+
 * {
     margin: 0;
     padding: 0;
