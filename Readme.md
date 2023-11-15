@@ -70,12 +70,27 @@ scene.add(group)
 
 ### 04
 
-Fullscreen (app 02-b) and OrbitControls (03). Intro to GIT
+Fullscreen (app 02-b), pack your website and publish it to neocities.org
 
 ### 05
 
-Install a GUI
+OrbitControls (03). 
 
+Intro to GIT
+
+Load a texture
+
+
+### 06
+
+
+Intro to Blender
+
+Load a Model
+
+### 07
+
+Install a GUI
 
 ## Documentation
 
