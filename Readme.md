@@ -80,6 +80,10 @@ Intro to GIT
 
 Load a texture
 
+Load HDR
+
+Matcap materials
+
 
 ### 06
 
