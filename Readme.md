@@ -82,11 +82,14 @@ Load a texture
 
 Load HDR
 
-Matcap materials
-
 
 ### 06
 
+Round of presentation
+
+Intro to PBR
+
+Matcap materials
 
 Intro to Blender
 
@@ -94,7 +97,6 @@ Load a Model
 
 ### 07
 
-TEST
 
 
 ## Documentation
