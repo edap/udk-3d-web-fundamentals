@@ -93,7 +93,7 @@ Matcap materials
 
 Intro to Blender
 
-Load a Model
+Load a GLTF Model. Make your own or download it from [here](https://github.com/KhronosGroup/glTF-Sample-Models) 
 
 ### 07
 
