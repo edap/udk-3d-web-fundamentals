@@ -93,10 +93,35 @@ Matcap materials
 
 Intro to Blender
 
-Load a GLTF Model. Make your own or download it from [here](https://github.com/KhronosGroup/glTF-Sample-Models) 
-
 ### 07
 
+Vincent intro to UV mapping
+
+Export to .gltf file format.
+
+Intro to bones and armature.
+
+Intro to keyframe animation.
+
+Intro to the animation workspace.
+
+Intro to loop animations.
+
+create a small animation. 
+
+Export again to .gltf format
+
+Load a GLTF Model. Make your own or download it from [here](https://github.com/KhronosGroup/glTF-Sample-Models) 
+
+
+
+Mesh optimizer. Use draco or [this](https://github.com/zeux/meshoptimizer#gltfpack)
+Exercise: Works with one of these 2 optimizer, reach the point where too much compression creates issues with your mesh.
+
+### 08
+
+What is light backing
+[How to bake lights in Blender](https://twitter.com/arturitu/status/966257367871606784)
 
 
 ## Documentation
@@ -123,3 +148,9 @@ The navigation commands that you need to move around in your directories using t
  - `npm install`. Install all the dependencies listed in `package.json`
  - `npm run dev`. Run a server
  - `npm run build`. Pack all our sources into static
+
+
+#### Performance Tips
+
+[Discover Three.js](https://discoverthreejs.com/tips-and-tricks/)
+[Mr. Doob's list]()
