@@ -121,7 +121,7 @@ Load a GLTF Model. Make your own or download it from [here](https://github.com/K
 
 Vincent intro to UV mapping
 
-Fire events animation.
+Fire events animation [07, 07b, 07c].
 
 What is light backing
 [How to bake lights in Blender](https://twitter.com/arturitu/status/966257367871606784)
