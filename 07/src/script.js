@@ -20,33 +20,14 @@ gltfLoader.load(
 
         mixer = new THREE.AnimationMixer(gltf.scene)
         run = mixer.clipAction(gltf.animations[2])
-
-
-        // try to uncomment this. What happens?
-        //survey.clampWhenFinished = true;
-
-        // From the three.js documentation https://threejs.org/docs/index.html?q=an#api/en/animation/AnimationAction
-        // .clampWhenFinished : Boolean
-
-        // If clampWhenFinished is set to true the animation will automatically be paused on its last frame.
-        
-        // If clampWhenFinished is set to false,the property "enabled" of the animation will automatically be switched to false when the last loop of the action has finished, so that this action has no further impact.
-        
-        // Default is false.
-        
-        // Note: clampWhenFinished has no impact if the action is interrupted (it has only an effect if its last loop has really finished).         
-        survey.clampWhenFinished = true;
-
-        // by default threejs animations run in loop!
-        // disable the loop
-        run.setLoop( THREE.LoopOnce );
-
-        // We do not call play as soon as it loads,
-        // we call the method "play()" only when the mouse is clicked
-        //run.play()
+        run.play()
 
         survey = mixer.clipAction(gltf.animations[0])
+        // by default threejs animations run in loop!
+        // disable the loop
         survey.setLoop( THREE.LoopOnce );
+
+        // do not play when it loads, let's play only when the mouse is clicked
         //survey.play()
     },
     (progress) =>
@@ -123,7 +104,7 @@ window.addEventListener('resize', () =>
 })
 
 // we add an event listener to our browser window
-// if the mouse is clicked, we play the animation
+// if the mouse is clicked, we play the survey animation
 window.addEventListener('mousedown', () =>
 {
     console.log("clicked")
