@@ -1,0 +1,12 @@
+/* this removes all types of margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* This position our canvas on the top left corner*/
+.animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+}

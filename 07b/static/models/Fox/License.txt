@@ -1,0 +1,7 @@
+License Information
+
+CC0: Low poly fox by PixelMannen
+
+CC-BY 4.0: Rigging and animation by @tomkranis on Sketchfab
+
+glTF conversion by @AsoboStudio and @scurest

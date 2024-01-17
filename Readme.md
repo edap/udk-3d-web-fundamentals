@@ -95,7 +95,7 @@ Intro to Blender
 
 ### 07
 
-Vincent intro to UV mapping
+
 
 Export to .gltf file format.
 
@@ -115,13 +115,23 @@ Load a GLTF Model. Make your own or download it from [here](https://github.com/K
 
 
 
-Mesh optimizer. Use draco or [this](https://github.com/zeux/meshoptimizer#gltfpack)
-Exercise: Works with one of these 2 optimizer, reach the point where too much compression creates issues with your mesh.
+
 
 ### 08
 
+Vincent intro to UV mapping
+
+Fire events animation.
+
 What is light backing
 [How to bake lights in Blender](https://twitter.com/arturitu/status/966257367871606784)
+
+Mesh optimizer. Use draco or [this](https://github.com/zeux/meshoptimizer#gltfpack)
+Exercise: Works with one of these 2 optimizer, reach the point where too much compression creates issues with your mesh.
+
+### 09
+
+Adding text to [threejs](https://threejs.org/docs/#manual/en/introduction/Creating-text) sketch.
 
 
 ## Documentation
