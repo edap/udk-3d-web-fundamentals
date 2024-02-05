@@ -1,22 +1,18 @@
 import * as THREE from 'three'
+import { Vector3 } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import {Player} from '/player.js'
 
-// In this sketch we are going to see how to detect if the mouse is over an object
-// using raycasting. Raycasting does not work good with animated objects, or objects that contain a skeletal animation.
-// the most robust solution is to create a bounding box for the gltf object that we want to select.
-// A bounding box around our object.
-// Do you remember the lesson about THREE.js group? Let's create a group with the fox and the bounding box.
-// as a child
-
-// I want to distinguis between the click on the fox and the click on the yellow cube.
+// In this sketch, besides the posssibility  to detect if the mouse is over an object,
+// we are using the player class to move our object with the ASWD keys or with the arrows
 
 const raycaster = new THREE.Raycaster();
 const pointer = new THREE.Vector2();
 let selected_object;
-const fox_group =  new THREE.Group();
 
 const gltfLoader = new GLTFLoader()
+const player = new Player();
 
 let mixer = null
 gltfLoader.load(
@@ -28,7 +24,7 @@ gltfLoader.load(
         // like a tag, or the name of the object
         gltf.scene.userData.objectName = 'the_fox';
         gltf.scene.scale.set(0.025, 0.025, 0.025)
-        fox_group.add(gltf.scene);
+        player.add(gltf.scene);
         
     },
     (progress) =>
@@ -45,6 +41,9 @@ gltfLoader.load(
 
 const scene = new THREE.Scene()
 
+const grid = new THREE.GridHelper(100, 10);
+scene.add(grid);
+
 const geometry = new THREE.BoxGeometry(1, 1, 1)
 const material = new THREE.MeshBasicMaterial({ color: 0xffff00 })
 const mesh = new THREE.Mesh(geometry, material)
@@ -57,10 +56,10 @@ const bb_material = new THREE.MeshBasicMaterial({wireframe:true, color: 0xff0000
 const bb_mesh = new THREE.Mesh(bb_geometry, bb_material)
 bb_mesh.userData.objectName = 'bb_fox';
 bb_mesh.position.y = 1;
-bb_mesh.visible = false;
-fox_group.add(bb_mesh);
+//bb_mesh.visible = false;
+player.add(bb_mesh);
 
-scene.add(fox_group);
+scene.add(player);
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 2.5);
 scene.add(ambientLight)
@@ -70,17 +69,17 @@ const sizes = {
     height: window.innerHeight
 }
 
-const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height)
-camera.position.z = 3
-scene.add(camera)
+const camera = new THREE.PerspectiveCamera(95, sizes.width / sizes.height)
+player.attachCamera(camera,new Vector3(0,1.5,-2.5))
+
 
 const canvas =  document.querySelector('canvas.animation')
 const renderer = new THREE.WebGLRenderer({
     canvas: canvas
 })
 
-const controls = new OrbitControls(camera,canvas)
-controls.enableDamping = true
+//const controls = new OrbitControls(camera,canvas)
+//controls.enableDamping = true
 
 renderer.setSize(sizes.width, sizes.height)
 renderer.render(scene, camera)
@@ -88,26 +87,23 @@ const clock = new THREE.Clock()
 
 const tick = () =>
 {
-    fox_group.position.x = Math.sin(clock.getElapsedTime() * 0.2) * 3;
 	raycaster.setFromCamera( pointer, camera );
 
-	// calculate objects intersecting the picking ray
 	const intersects = raycaster.intersectObjects( scene.children, true );
     if(intersects.length > 0) {
         selected_object = getNameIntersectedObject(intersects[0].object);
     }else{
         selected_object = null;
     }
-    console.log(selected_object);
 
-    controls.update()
+    player.update()
+    //controls.update()
     renderer.render(scene, camera)
     window.requestAnimationFrame(tick)
 }
 
 const getNameIntersectedObject = (obj) => {
-    //console.log(obj.userData.objectName);
-
+    console.log(obj.userData.objectName);
     if(obj.userData.objectName !== null && obj.userData.objectName !== undefined){
         return obj.userData.objectName;
     }
@@ -121,6 +117,7 @@ const getNameIntersectedObject = (obj) => {
 
 tick()
 
+
 window.addEventListener('resize', () =>
 {
     sizes.width = window.innerWidth
@@ -132,8 +129,6 @@ window.addEventListener('resize', () =>
 })
 
 window.addEventListener( 'pointermove', ( event ) => {
-	// calculate pointer position in normalized device coordinates
-	// (-1 to +1) for both components
 	pointer.x = ( event.clientX / window.innerWidth ) * 2 - 1;
 	pointer.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
 
